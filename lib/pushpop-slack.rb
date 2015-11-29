@@ -58,7 +58,7 @@ module Pushpop
       opts = {}
 
       if _channel
-        if _channel[0] == '#'
+        if _channel[0] == '#' || _channel[0] == '@'
           opts['channel'] = _channel
         else
           opts['channel'] = "##{_channel}"
